@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-papel text-tinta-900 font-body;
+}
+
+/* Borde tipo "perforación" de pasaporte, usado como separador de secciones */
+.borde-perforado {
+  border-top: 2px dashed theme('colors.tinta.300');
+}
+
+.input {
+  @apply w-full rounded-md border border-tinta-100 bg-white px-3 py-2 text-sm text-tinta-900 shadow-sm outline-none focus:border-tinta-500 focus:ring-1 focus:ring-tinta-500;
+}
